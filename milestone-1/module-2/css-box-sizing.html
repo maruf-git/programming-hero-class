@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css Box Sizing Property</title>
+    <style>
+        /*box-sizing:content-box; is default value*/
+        /* 
+        box-sizing:border-box;
+        made programmers life easy.
+        it is a good practice to use border-box as universal value
+        */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .para {
+            width: 400px;
+            background-color: antiquewhite;
+            padding: 25px;
+            margin: 50px;
+            border: 5px solid aqua;
+        }
+
+        #first-para {
+            box-sizing: content-box;
+        }
+
+        #second-para {
+            box-sizing: border-box;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>Box Sizing Content Box</h1>
+    <p id="first-para" class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quia veniam quos fugit
+        ratione. Temporibus repellendus possimus eveniet aspernatur tempora. Placeat, ad. Aliquam, obcaecati quam a non
+        facere veritatis architecto ipsam commodi eos cupiditate velit aliquid vero aspernatur ex assumenda unde
+        doloribus labore similique ratione, rerum beatae voluptate sit molestiae?
+    </p>
+
+    <h1>Box Sizing Border Box</h1>
+    <p id="second-para" class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quia veniam quos fugit
+        ratione. Temporibus repellendus possimus eveniet aspernatur tempora. Placeat, ad. Aliquam, obcaecati quam a non
+        facere veritatis architecto ipsam commodi eos cupiditate velit aliquid vero aspernatur ex assumenda unde
+        doloribus labore similique ratione, rerum beatae voluptate sit molestiae?
+    </p>
+
+
 </body>
+
 </html>
