@@ -9,32 +9,72 @@
             margin:0;
             padding:0;
         }
-        div{
+        .container{
             border:1px solid red;
+            position:relative;
         }
-        img{
-            
-        }
+        /*  position static */
         .img-1{
-            top:100px;
+            top:50px;
             /* position:static; default value */
         }
+        /* position relative */
         .img-2{
-            top:100px;
+            top:50px;
             position:relative; /*relative to body // current window*/
             /* maintains gap or empty space that is created after re-positioning the element */
         }
+        /*  position absolute */
+        .img-3{
+            position:absolute; /* relative to container*/
+            top:100px;
+        }
+        
+        .img-4{
+        
+        }
 
+        /* testing fixed and sticky */
+        /* z-index of sticky is higher than fixed */
+        .box{
+            border:2px solid green;
+            width:100%;
+            height:5000px;
+            margin-top:100px;
+        }
+        .img-5{
+            top:100px;
+            position:fixed;
+           
+        }
+        .img-6{
+          top:100px;
+          left:150px;
+          position:sticky;
+        }
+        .text{
+            margin-top:20px;
+            border:2px solid blue;
+            height:5000px;
+        }
 
     </style>
 </head>
 <body>
+    <!-- for testing static , relative and absolute -->
     <div class="container">
         <img class="img-1" src="images/img1.jpg" alt="img1" width="300px" height="250px">
         <img class="img-2" src="images/img2.jpg" alt="img2" width="300px" height="250px">
         <img class="img-3" src="images/img3.jpg" alt="img3" width="300px" height="250px">
         <img class="img-4" src="images/img4.jpg" alt="img4" width="300px" height="250px">
-       
+    </div>
+    <!-- for texting fixed and sticky -->
+    <div class="box">
+        <img class="img-5" src="images/img4.jpg" alt="img5" width="200px" height="150px">
+        <img class="img-6" src="images/img5.jpg" alt="img6" width="250px" height="200px">
+    </div>
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque illum odio est hic atque corporis, voluptate, ipsam dolorem rem nemo minima expedita nulla praesentium natus perferendis repellat dolorum modi aliquid fugiat. Quisquam, animi ab? Reprehenderit voluptates est omnis beatae recusandae dolore aliquid quasi? Exercitationem architecto placeat aliquid quae voluptatibus nulla deserunt nobis quos id quam commodi tenetur ducimus, magnam voluptates error aspernatur ratione blanditiis illum explicabo, repudiandae ullam neque ipsum dolorem natus. Magnam adipisci aspernatur, blanditiis accusamus ipsa sint doloremque velit sapiente veniam iusto suscipit aut eius soluta? Cumque labore voluptatem ratione nam earum quod rem incidunt ullam quo recusandae nemo repellat, a facere accusamus distinctio, laudantium harum hic nisi odit amet sapiente quam unde soluta tempore. Similique reprehenderit laborum voluptatem aliquam labore distinctio delectus suscipit, quis eius voluptates! Accusamus repellendus fuga repellat unde temporibus iure possimus necessitatibus nobis explicabo quia, commodi sed similique nisi corporis delectus molestias architecto reprehenderit recusandae autem, quasi ullam eaque ducimus magnam. Qui ducimus ipsum porro sequi, quod blanditiis odit iure nam, enim adipisci quos deleniti, dolore excepturi? Nihil delectus aliquam ea exercitationem. Impedit asperiores voluptates explicabo eligendi totam, assumenda ex labore tempora ab iusto nobis eos alias eveniet velit quaerat sequi possimus sed. Dolorum odit porro fugit veniam magnam expedita corrupti saepe voluptates recusandae, tempora ea dolorem provident non nobis magni vero consequuntur molestiae iure, soluta, atque reprehenderit aperiam dolor? Nihil tenetur laboriosam, quod, pariatur alias incidunt aperiam esse, ullam officiis nostrum officia asperiores aliquam inventore minima illum sequi quaerat provident! Praesentium, enim omnis. Eligendi iure nisi nobis, ex iste, vel earum ea quo numquam doloremque magni ullam dolores ipsam molestias obcaecati aliquam blanditiis nihil ut. Eligendi repudiandae quaerat ratione expedita modi accusamus. Architecto sunt quis animi, laboriosam vitae aut similique eaque? Quis quisquam odit voluptas, eveniet nobis eos qui laudantium aliquam natus amet perferendis fugit aspernatur, rem porro earum sapiente dolorem non veritatis voluptate optio impedit commodi! Culpa iure quia aspernatur, totam assumenda fuga alias quidem sapiente suscipit. Repellendus ea excepturi impedit placeat reiciendis error id debitis consectetur, voluptas fugiat sed optio eaque nisi consequuntur est tempore suscipit minima quasi. Nam officiis dolore minima odit laborum sint laudantium molestias ullam beatae enim accusantium reiciendis non voluptas corrupti maxime, nihil suscipit quaerat cum? Perferendis, consequatur quod nemo nesciunt aliquid, rem iste corporis sapiente itaque veritatis facere aspernatur amet numquam inventore suscipit placeat assumenda illum! Hic commodi eveniet voluptatibus enim consequatur accusantium quo eaque cupiditate, dolorem exercitationem quod eius, architecto atque sit! Numquam, dignissimos minus, error dolores nobis voluptate eligendi esse modi corporis, corrupti iure! Earum, ea quibusdam consequuntur voluptatum qui cumque excepturi distinctio harum laborum et molestiae sint autem magnam delectus ullam. Corrupti voluptatibus reiciendis, ex saepe blanditiis, culpa voluptatum numquam dignissimos quia aut molestiae doloremque quasi provident tempore sapiente quod voluptate recusandae a facilis iure rerum iusto perferendis nesciunt consequatur. Eveniet distinctio, praesentium nulla esse autem in omnis similique optio eum mollitia? Ipsam maiores nulla reprehenderit vitae nesciunt quo architecto cupiditate. Saepe ipsam veritatis ex aliquam doloremque omnis quidem molestiae commodi consequuntur nulla.
     </div>
 </body>
 </html>
