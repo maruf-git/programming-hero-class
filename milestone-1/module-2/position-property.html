@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        div{
+            border:1px solid red;
+        }
+        img{
+            
+        }
+        .img-1{
+            top:100px;
+            /* position:static; default value */
+        }
+        .img-2{
+            top:100px;
+            position:relative; /*relative to body // current window*/
+            /* maintains gap or empty space that is created after re-positioning the element */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img-1" src="images/img1.jpg" alt="img1" width="300px" height="250px">
+        <img class="img-2" src="images/img2.jpg" alt="img2" width="300px" height="250px">
+        <img class="img-3" src="images/img3.jpg" alt="img3" width="300px" height="250px">
+        <img class="img-4" src="images/img4.jpg" alt="img4" width="300px" height="250px">
+       
+    </div>
+</body>
+</html>
