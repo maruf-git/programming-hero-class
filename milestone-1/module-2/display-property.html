@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .box1 {
+            border: 2px solid red;
+        }
+
+        .box2 {
+            display: none;
+            border: 2px solid green;
+        }
+
+        .box3 {
+            border: 2px solid blue;
+            visibility:hidden;
+        }
+
+        .box4{
+            border: 2px solid aquamarine;
+        }
+        
+        .span-1 {
+            border: 2px solid green;
+            /* padding works properly */
+            padding: 10px;
+            /*margin works for x-axis only*/
+            margin: 30px;
+            /* width and height does not work */
+            width: 200px;
+            height: 200px;
+        }
+
+        .span-4 {
+            border: 2px solid green;
+            padding: 10px;
+            margin: 30px;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            /* here i can also use box-sizing:border-box for total 200px width and height */
+            /* box-sizing:border-box; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Example of display inline:</h1>
+    <div class="box box1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas debitis, fugit sint harum aut
+        facere?<span class="span-1">Vitae quo corrupti aperiam.</span> Exercitationem vitae explicabo earum eum, facilis
+        vero dolorum, est maiores ad ut suscipit necessitatibus cupiditate aliquid ducimus. Delectus magni dolore
+        ratione? Totam illo necessitatibus officiis omnis, pariatur quaerat fugiat cum voluptate? officiis omnis,
+        pariatur quaerat fugiat cum voluptate?</div>
+
+    <h1>Example of display none:</h1>
+    <div class="box box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas debitis, fugit sint harum aut
+        facere?<span class="span-2">Vitae quo corrupti aperiam.</span> Exercitationem vitae explicabo earum eum, facilis
+        vero dolorum,
+        est maiores ad ut suscipit necessitatibus cupiditate aliquid ducimus. Delectus magni dolore ratione? Totam illo
+        necessitatibus officiis omnis, pariatur quaerat fugiat cum voluptate? officiis omnis, pariatur quaerat fugiat
+        cum voluptate?</div>
+
+   <h1>Example of visibility:hidden, compare display:none vs visibility:hidden</h1>
+    <div class="box box3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas debitis, fugit sint harum aut
+        facere?<span class="span-3">Vitae quo corrupti aperiam.</span> Exercitationem vitae explicabo earum eum, facilis
+        vero dolorum,
+        est maiores ad ut suscipit necessitatibus cupiditate aliquid ducimus. Delectus magni dolore ratione? Totam illo
+        necessitatibus officiis omnis, pariatur quaerat fugiat cum voluptate? officiis omnis, pariatur quaerat fugiat
+        cum voluptate?</div>
+
+    <h1>Example of display inline block:</h1>
+    <div class="box box4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas debitis, fugit sint harum aut
+        facere?<span class="span-4">Vitae quo corrupti aperiam.</span> Exercitationem vitae explicabo earum eum, facilis
+        vero dolorum,
+        est maiores ad ut suscipit necessitatibus cupiditate aliquid ducimus. Delectus magni dolore ratione? Totam illo
+        necessitatibus officiis omnis, pariatur quaerat fugiat cum voluptate? officiis omnis, pariatur quaerat fugiat
+        cum voluptate?</div>
+</body>
+
+</html>
