@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,300px);
+    gap:5px;
+}
+.second-container{ /* got height and width */
+    /* border:2px solid red; */
+}
+.img-container{
+    width:100%;
+    height:100%;
+}
+.img-container img{
+    width:100%;
+    height:100%;
+}
+.first-img-container{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.apple-container{
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows: repeat(2,145px);
+    gap:5px;
+}
+.apple{ /*got height and width*/
+    /* border:2px solid blue; */
+}
+
+.mango-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,145px);
+    gap:5px;
+}
+.mango{/* got height and width */
+    /* border:2px solid green; */
+}
