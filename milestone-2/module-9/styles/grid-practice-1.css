@@ -42,7 +42,25 @@
 }
 
 /* individual item arrange in grid */
+
 .box-1-layout-1 {
     justify-self: start; /* works horizontally */
     align-self: end; /* works vertically */
+}
+
+/* part-2 section styles */
+.part-2{
+    
+}
+.layout-2 {
+    margin:20px;
+    display: grid;
+    grid-template-columns: repeat(5,200px);
+    grid-template-rows: repeat(2,200px);
+    height: 600px;
+}
+.box-layout-2{
+    width:100px;
+    height:100px;
+    border:2px solid green;
 }
