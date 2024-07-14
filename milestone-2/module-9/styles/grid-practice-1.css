@@ -53,11 +53,13 @@
     
 }
 .layout-2 {
-    margin:20px;
+    margin: 20px;
     display: grid;
     grid-template-columns: repeat(5,200px);
     grid-template-rows: repeat(2,200px);
     height: 600px;
+    justify-content: center; /* works horizontally */
+    align-content: center; /* works vertically */
 }
 .box-layout-2{
     width:100px;
