@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.part {
+    border: 2px solid aqua;
+    background-color: antiquewhite;
+    margin-bottom: 50px;
+}
+
+.part-1 {}
+
+.topics {
+    margin: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    border: 2px solid tomato;
+    height: 500px;
+    margin: 10px;
+}
+
+.layout-1 {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-items: center;
+    /* makes horizontally center */
+    align-items: center;
+    /* makes vertically center */
+}
+
+.box-layout-1 {
+    width: 100px;
+    height: 100px;
+    border: 2px solid green;
+}
+
+.notes {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* individual item arrange in grid */
+
+.box-1-layout-1 {
+    justify-self: start;
+    /* works horizontally */
+    align-self: end;
+    /* works vertically */
+}
+
+/* part-2 section styles */
+.part-2 {}
+
+.layout-2 {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(2, 200px);
+    height: 600px;
+    /* works horizontally */
+    /* justify-content: center; */
+    /* works vertically */
+    /* align-content: center;  */
+
+    /* short hand of justify-content and align-content*/
+    place-content: center center; /*  align-content justify-content */
+}
+
+.box-layout-2 {
+    width: 100px;
+    height: 100px;
+    border: 2px solid green;
+}

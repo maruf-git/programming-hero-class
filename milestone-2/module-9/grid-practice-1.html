@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice 1</title>
+    <link rel="stylesheet" href="styles/grid-practice-1.css">
+</head>
+
+<body>
+    <div class="topics">
+        <h1>Practice List</h1>
+        <ul>
+            <li>justify-items</li>
+            <li>align-items</li>
+            <li>justify-self</li>
+            <li>align-self</li>
+            <li>justify-content</li>
+            <li>align-content</li>
+            <li>place-content</li>
+        </ul>
+    </div>
+    <section class="part part-1">
+        <h2>Grid Container: </h2>
+        <div class="grid layout-1">
+            <div class="box-layout-1 box-1-layout-1">box-1 <br>applying justify-self and align-self</div>
+            <div class="box-layout-1 box-2-layout-1">box-2</div>
+            <div class="box-layout-1 box-3-layout-1">box-3</div>
+            <div class="box-layout-1 box-4-layout-1">box-4</div>
+            <div class="box-layout-1 box-5-layout-1">box-5</div>
+            <div class="box-layout-1 box-6-layout-1">box-6</div>
+            <div class="box-layout-1 box-7-layout-1">box-7</div>
+        </div>
+        <div class="notes">
+            <h2>Notes:</h2>
+            <br>
+            <h3>Works based on Cells:</h3>
+            <ol>
+                <li>justify-items and align-items both work depending on grid cell.
+                </li>
+                <li>
+                    justify-self and align-self both work for individual items and arrange individual item depending on
+                    grid cell.
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section class="part part-2">
+        <h2>Grid Container:</h2>
+        <div class="grid layout-2">
+            <div class="box-layout-2 box-1-layout-2">box-1</div>
+            <div class="box-layout-2 box-2-layout-2">box-2</div>
+            <div class="box-layout-2 box-3-layout-2">box-3</div>
+            <div class="box-layout-2 box-4-layout-2">box-4</div>
+            <div class="box-layout-2 box-5-layout-2">box-5</div>
+            <div class="box-layout-2 box-6-layout-2">box-6</div>
+            <div class="box-layout-2 box-7-layout-2">box-7</div>
+        </div>
+        <div class="notes">
+            <h2>Notes:</h2>
+            <br>
+            <h3>Works based on Grid Container:</h3>
+            <ol>
+                <li>justify-content and align-content both work depending on grid container.
+                </li>
+                <li>place-content is the short hand of justify-content and align-content <br>
+                format is: <br> place-content:align-content justify-content; 
+                </li>
+            </ol>
+        </div>
+    </section>
+</body>
+
+</html>
