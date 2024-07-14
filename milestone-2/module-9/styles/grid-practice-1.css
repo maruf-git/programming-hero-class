@@ -7,19 +7,35 @@
     background-color: antiquewhite;
 }
 .part-1{}
-.topics{}
+.topics {
+    margin: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
 .grid{
     border:2px solid tomato;
     height:500px;
     margin:10px;
 }
-.layout-1{
-    display:grid;
-    grid-template-columns: repeat(5,auto);
-}
+
 .layout-1 {
     display: grid;
     grid-template-columns: repeat(5,auto);
     justify-items: center; /* makes horizontally center */
     align-items: center; /* makes vertically center */
+}
+
+.box-layout-1{
+    width:100px;
+    height:100px;
+    border:2px solid green;
+}
+.notes{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0;
 }
