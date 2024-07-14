@@ -5,6 +5,7 @@
 .part{
     border:2px solid aqua;
     background-color: antiquewhite;
+    margin-bottom:50px;
 }
 .part-1{}
 .topics {
@@ -38,4 +39,10 @@
     justify-content: center;
     align-items: center;
     margin:20px 0;
+}
+
+/* individual item arrange in grid */
+.box-1-layout-1 {
+    justify-self: start; /* works horizontally */
+    align-self: end; /* works vertically */
 }
