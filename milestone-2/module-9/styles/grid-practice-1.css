@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+.part{
+    border:2px solid aqua;
+    background-color: antiquewhite;
+}
+.part-1{}
+.topics{}
+.grid{
+    border:2px solid tomato;
+    height:500px;
+    margin:10px;
+}
+.layout-1{
+    display:grid;
+    grid-template-columns: repeat(5,auto);
+}
+.layout-1 {
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    justify-items: center; /* makes horizontally center */
+    align-items: center; /* makes vertically center */
+}
