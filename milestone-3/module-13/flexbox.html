@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Flexbox</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+        .container {
+            height: 300px;
+            background-color: bisque;
+            border: 2px solid red;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            align-items:center;
+        }
+
+        .item {
+            border: 2px solid red;
+            background-color: antiquewhite;
+            height: 50px;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container bg-yellow-200 border-2 border-solid border-red-500 h-80 p-5 flex gap-5">
+        <div class="item item-1 border-2 border-solid border-red-500">item-1</div>
+        <div class="item item-2">item-2</div>
+        <div class="item item-3">item-3</div>
+        <div class="item item-4">item-4</div>
+        <div class="item item-5">item-5</div>
+    </div>
+</body>
+
+</html>
